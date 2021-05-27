@@ -1,0 +1,30 @@
+.contactosContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#btnAgregar{
+    position: absolute;
+    right: 40%;
+}
+#btnCerrarSesion{
+    position: absolute;
+    right: 25%;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin: 25px;
+}
+#contactosContainer{
+    margin: 10px;
+   
+    
+    
+}

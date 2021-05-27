@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="Css/login.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loginContainer">
+        <h1>Log In</h1>
+        <input type="text" placeholder="Correo" id="correoInput2">
+        <input type="password" placeholder="Password" id="passwordInput2">
+        <button id="loginBtn" >Login</button>
+    </div>
+    <div class="loginContainer">
+       <a href="registro.html">No tengo cuenta </a>
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDsjOm7gUHyAomyEEe6lkeD919q-3QcQV0",
+    authDomain: "practicasemana15-72571.firebaseapp.com",
+    projectId: "practicasemana15-72571",
+    storageBucket: "practicasemana15-72571.appspot.com",
+    messagingSenderId: "328984098990",
+    appId: "1:328984098990:web:5a6dce3b087630655d153f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="JS/login.js"></script>
+</html>

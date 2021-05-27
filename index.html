@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="Css/index.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="containerFull">
+
+   <div class="contactosContainer">
+    <h1>Tus contactos</h1>
+    <button id="btnAgregar">+</button>
+    <button id="btnCerrarSesion">Cerrar Cesión</button>
+   </div>
+
+   <div class="modal" id="modalContainer">    
+    <div class = "modalForm">
+      <h1>Agregar nuevo contacto</h1>
+      <input id = "nombreNInput" type="text" placeholder="Nombre">
+  
+      <input id = "teleNInput" type="text" placeholder="Telefono">
+  
+      <button class="btn" id ="btnNuevoContacto">Agregar</button>
+      <button class="btnCancel" id ="btnCerrar">X</button>
+    </div>       
+  </div>
+
+   <div class="contactosContainer" id="contactosContainer">
+        <!-- Espacio para agregar los contactos-->
+   </div>
+    </div>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDsjOm7gUHyAomyEEe6lkeD919q-3QcQV0",
+    authDomain: "practicasemana15-72571.firebaseapp.com",
+    projectId: "practicasemana15-72571",
+    storageBucket: "practicasemana15-72571.appspot.com",
+    messagingSenderId: "328984098990",
+    appId: "1:328984098990:web:5a6dce3b087630655d153f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>const database = firebase.database();</script>
+<script src="JS/contacto.js"></script>
+<script src="JS/index.js"></script>
+</html>

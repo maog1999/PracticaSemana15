@@ -1,0 +1,12 @@
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.registro *{
+    margin-bottom: 10px;
+}
